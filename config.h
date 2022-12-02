@@ -7,10 +7,19 @@ static const char *fonts[] = {
 	"monospace:size=14"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
+
+// COLORS FROM DWM CONFIG
+static const char col_gray1[]       = "#222222";
+static const char col_gray2[]       = "#444444";
+static const char col_gray3[]       = "#bbbbbb";
+static const char col_gray4[]       = "#eeeeee";
+static const char col_spaceblue[]     = "#283044";
+static const char * const col_main = col_spaceblue;
+
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#f8f8f2", "#282a36" },
-	[SchemeSel] = { "#f8f8f2", "#6272a4" },
+	[SchemeNorm] = { col_gray3, col_gray1 },
+	[SchemeSel] = { col_gray4, col_main },
 	[SchemeSelHighlight] = { "#ffc978", "#005577" },
 	[SchemeNormHighlight] = { "#ffc978", "#222222" },
 	[SchemeOut] = { "#000000", "#00ffff" },
