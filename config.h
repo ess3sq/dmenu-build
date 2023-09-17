@@ -6,7 +6,10 @@ static int topbar = 1;                      /* -b  option; if 0, dmenu appears a
 static const int user_bh = 0; // 22;               /* add an defined amount of pixels to the bar height */
 
 static const char *fonts[] = {
-	"monospace:size=14"
+	"UbuntuMonoNerdFont-Regular:size=14",
+	"Unifont:size=14",
+	"Symbola:size=12",
+	"monospace:size=14",
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 
